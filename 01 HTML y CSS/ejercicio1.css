@@ -1,0 +1,117 @@
+body{
+    max-width:1200px;
+}
+
+
+header, main, footer{
+    background-color: rgb(0, 0, 0);
+    padding: 30px;
+    margin: 0px 0px 20px 0px;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+.navegation-bar {
+    display: flex;
+    background-color: rgb(23, 70, 141);
+    padding: 10px;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.navegation-bar nav{
+    background-color: rgb(197, 63, 63);
+    padding: 10px;
+    flex-grow: 1;
+    margin: 10px;
+}
+
+
+.banner{
+    padding: 30px;
+    background-color: orange; 
+}
+.banner nav{
+    font-size: 3pc;
+    padding: 10px;
+    background-color: yellow;
+}
+
+
+.main-body{
+    padding: 30px;
+    display:flex;
+}
+
+.main-body section{
+    background-color: rgb(86, 77, 134);
+    padding: 30px;
+    flex-grow: 2;
+    margin-right: 30px;
+}
+.main-body section ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px 20px; 
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+.main-body section li{
+    background-color: rgb(62, 98, 216);
+    padding: 20px;
+}
+
+.main-body section div {
+    background-color: rgb(135, 180, 248);
+    padding: 20px;
+}
+
+
+.main-body aside{
+    background-color: rgb(255, 82, 82);
+    flex-grow: 0.5;
+    padding: 20px;
+}
+.main-body ul{
+    margin: 0;
+    padding: 0;
+}
+.main-body aside li{
+    background-color: yellow;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+footer div{
+    padding: 20px;
+    background-color: yellowgreen;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .navegation-bar {
+        display: block;
+    }
+
+    .main-body{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .main-body section{
+        background-color: rgb(86, 77, 134);
+        padding: 30px;
+        flex-grow: 2;
+        margin: 0 0 20px 0;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    
+    .main-body section ul{
+        display:flex;
+        flex-direction: column;
+    }
+}
