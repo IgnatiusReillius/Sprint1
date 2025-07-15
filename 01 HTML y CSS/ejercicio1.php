@@ -2,16 +2,18 @@
 <html lang="en">
     <head>
         <title>Ejercicio 1</title>
-        <link rel="stylesheet" href="ejercicio1.css" text/css">
+        <link rel="stylesheet" href="ejercicio1.css">
         
     </head>
 
     <body>
         <header class="header">
             <section class="navegation-bar">
-                <nav>Logo</nav>
-                <nav>nav</nav>
-                <nav>social</nav>
+                <ul>
+                    <li>Logo</li>
+                    <li id="nav">nav</li>
+                    <li>social</li>
+                </ul>
             </section>
             <section class="banner">
                 <nav>banner</nav>

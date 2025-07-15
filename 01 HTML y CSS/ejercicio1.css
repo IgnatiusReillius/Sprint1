@@ -9,23 +9,31 @@ header, main, footer{
     margin: 0px 0px 20px 0px;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    gap: 20px 20px; 
+}
 li {
     list-style-type: none;
 }
 
 
 .navegation-bar {
-    display: flex;
     background-color: rgb(23, 70, 141);
-    padding: 10px;
-    justify-content: space-around;
+    padding: 30px;
     margin-bottom: 30px;
 }
-.navegation-bar nav{
+.navegation-bar ul {
+    display:flex;
+}
+.navegation-bar li{
     background-color: rgb(197, 63, 63);
     padding: 10px;
     flex-grow: 1;
-    margin: 10px;
+}
+.navegation-bar #nav {
+    flex-grow: 3;
 }
 
 
@@ -35,7 +43,7 @@ li {
 }
 .banner nav{
     font-size: 3pc;
-    padding: 10px;
+    padding: 20px;
     background-color: yellow;
 }
 
@@ -54,15 +62,12 @@ li {
 .main-body section ul{
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    gap: 20px 20px; 
-    padding: 0;
     margin: 0 0 20px 0;
 }
 .main-body section li{
     background-color: rgb(62, 98, 216);
     padding: 20px;
 }
-
 .main-body section div {
     background-color: rgb(135, 180, 248);
     padding: 20px;
@@ -72,11 +77,7 @@ li {
 .main-body aside{
     background-color: rgb(255, 82, 82);
     flex-grow: 0.5;
-    padding: 20px;
-}
-.main-body ul{
-    margin: 0;
-    padding: 0;
+    padding: 30px;
 }
 .main-body aside li{
     background-color: yellow;
@@ -94,8 +95,7 @@ footer div{
     .navegation-bar {
         display: block;
     }
-
-    .main-body{
+    .navegation-bar ul, .main-body {
         display:flex;
         flex-direction: column;
     }
