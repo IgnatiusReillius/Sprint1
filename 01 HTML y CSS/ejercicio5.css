@@ -1,0 +1,221 @@
+#bold-font {
+    font-weight: 500;
+}
+
+body {
+    max-width:1200px;
+    margin:auto;
+    font-family: "Roboto";
+}
+
+
+header, main , footer {
+    margin: 0px 0px 10px 0px;
+}
+
+.header {
+    background-position: center;
+    animation: opacityIn 1s;
+}
+.main-body {
+    animation: opacityIn 1s forwards;
+    animation-delay: .5s;
+    opacity: 0;
+}
+.footer, #article {
+    animation: opacityIn 1s forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+
+
+@keyframes opacityIn {
+    0% { opacity: 0;}
+    100% {opacity: 1;}
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    gap: 20px 20px; 
+}
+li {
+    list-style-type: none;
+}
+
+
+.navegation-bar {
+    padding: 50px 15px 0 15px;
+    margin-bottom: 30px;
+    color: #6e6e6e;
+}
+.navegation-bar ul {
+    display: flex;
+    justify-content: space-between;
+}
+.navegation-bar img {
+    filter: opacity(50%);
+}
+#navbar-menu li {
+    padding: 10px;
+    display: flex;
+    transition: all .5s; /* efecto mouseover, usar junto con el cambio de hover*/
+}
+#navbar-menu li:hover{
+    scale: 1.2;
+    filter: invert(67%) sepia(40%) saturate(1845%) hue-rotate(314deg) brightness(92%) contrast(104%);
+    /* color: #e48e83;  */
+}
+#logo {
+    max-height: 50px;
+    align-self: center;
+    filter: opacity(100%);
+}
+#navbar-menu {
+    width: 70%;
+    gap: 10px;
+}
+#navbar-menu img{
+    width: 22px;
+}
+#social {
+    gap: 5px;
+    justify-content: flex-end;
+    width: 90px;
+}
+#social img:hover {
+    filter: invert(67%) sepia(40%) saturate(1845%) hue-rotate(314deg) brightness(92%) contrast(104%);
+}/*
+https://codepen.io/sosuke/pen/Pjoqqp?__cf_chl_jschl_tk__=ecc0b72797ae71bc009d6322e3e470773936b386-1604211766-0-ASpz720gXnc6Ej0vzlgY9-KLmlPkldgcOx1wAmGTUCjLZLOxkArNxpRzZ9m8woL-NGmP9LBGVPws8UxMJZrR7O1qFH6QkKtrGVPw6StRnXiK1XTQR_nY905r0XobAG2nOmyC6Zq8mdyPDp1MyHD7JLodJUXCRViXhtmLmRVE_-JGarVJRlxs6k3DzAOQQEJewfp00DjhlD0mxr8ZKpk2yq6IPTZZQ52XYxh26FC5MxLHhs7LuAwhtolmDZyp4_IuwRg8I5m-2--MmvGE8CCqjRWrkE85zgkMXPlOqcZtppRpZhn6Uz9DZAuKheHwVBb0ySIhFYG92bvQOgiKX0TTswB1SHgOLIeqktuyUaAgxI_h
+*/
+
+#social img {
+    max-width: 30px;
+}
+
+
+.banner {
+    padding: 30px 60px 0 60px;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.banner nav {
+    margin-top: 50px;
+    font-size: 3pc;
+    text-align: center;
+    color: orange;
+    padding: 20px 20px 50px 20px;
+    background-color: #0000002c;
+}
+
+
+.main-body {
+    display: flex;
+}
+#titular {
+    background-color: #e48e83;
+    margin: 0;
+    padding: 20px 0 0px 5px;
+    font-size: 20pt;
+    text-transform: uppercase;
+}
+.main-body section {
+    background-color: rgb(205, 205, 205);
+    margin-right: 10px;
+    padding: 15px;
+}
+#column-text {
+    padding: 20px 0 0 0;
+    column-count: 2;
+}
+#articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    margin: 0 0 20px 0;
+}
+#article {
+    background-color: rgb(231, 231, 231);
+    margin: 0;
+    padding: 15px;
+}
+#titular {
+    color: rgb(231, 231, 231);
+}
+#article-image {
+    position: relative;
+}
+#article-image span{
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    font-size: 12pt;
+    color: yellow;
+}
+#articles img {
+    max-width: 100%;
+}
+#articles footer {
+    background-color: rgb(231, 231, 231);
+    padding: 20px 0 0 0;
+    color: #6e6e6e;
+}
+.main-body nav {
+    text-align: center;
+}
+
+
+.main-body aside {
+    text-align: center;
+    background-color: rgb(205, 205, 205);
+    flex-grow: 0.5;
+    padding: 30px;
+}
+.main-body aside li {
+    margin-bottom: 20px;
+    min-width: 200px;
+}
+
+footer {
+    background-color: rgb(185, 185, 185);
+    padding: 0 15px 0 15px;
+}
+footer div {
+    background-color: rgb(216, 216, 216);
+    padding: 15px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .navegation-bar {
+        display: block;
+    }
+    .navegation-bar ul, .main-body {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .main-body section{
+        background-color: rgb(86, 77, 134);
+        padding: 30px;
+        flex-grow: 2;
+        margin: 0 0 20px 0;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    
+    .main-body section ul{
+        display:flex;
+        flex-direction: column;
+    }
+}
+
+@keyframes moverIZquierda {
+    0% {
+
+    }
+    100% {
+
+    }
+}
