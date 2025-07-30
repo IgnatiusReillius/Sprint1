@@ -1,6 +1,9 @@
 <?php
+    declare(strict_types=1);
+
     require 'numberChecker.php';
     use PHPUnit\Framework\TestCase;
+
     class NumberCheckerTest extends TestCase {
         private $numberChecker;
 
@@ -14,14 +17,12 @@
             $this->numberChecker = NULL;
         }
 
-        public function testIsEven() {
-            $result = $this->numberChecker->isEven();
-            $this->assertEquals(0, $result);
+        public function testIsEven() : void {
+            $this->assertFalse($this->numberChecker->isEven());
         }
 
-        public function testIsPositive() {
-            $result = $this->numberChecker->isPositive();
-            $this->assertEquals(1, $result);
+        public function testIsPositive() : void {
+            $this->assertTrue($this->numberChecker->isPositive());
         }
     
     }
